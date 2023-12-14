@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Quiz-app</h1>
+  <form id="quizForm">
+    <label for="question">Question (max 140 characters):</label>
+    <textarea id="question" maxlength="140" required></textarea>
+    <label>Answers:</label>
+    <input type="text" class="answer-option" required>
+    <input type="text" class="answer-option" required>
+    <input type="text" class="answer-option" required>
+    <input type="text" class="answer-option" required>
+    <label for="correctAnswer">Select Correct Answer:</label>
+    <select id="correctAnswer" required>
+      <option value="0">Option 1</option>
+      <option value="1">Option 2</option>
+      <option value="2">Option 3</option>
+      <option value="3">Option 4</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="quizQuestionContainer"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
