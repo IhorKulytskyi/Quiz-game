@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Quiz</h1>
+    <div id="player-inputs">
+      <label for="player1">Player 1:</label>
+      <input type="text" id="player1" placeholder="Enter name">
+
+      <label for="player2">Player 2:</label>
+      <input type="text" id="player2" placeholder="Enter name">
+
+      <button id="start-quiz-btn">Start Quiz</button>
+    </div>
+    <div class="quiz" id="quiz-section">
+      <p id="player1-info"></p>
+      <p id="player2-info"></p>
+      <div id="search-container">
+        <label for="search-input">Search Question:</label>
+        <input type="text" id="search-input" placeholder="Enter search term">
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="question-container">
+        <h2 id="question">Question</h2>
+        <div id="answer-buttons">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+      <button id="next-btn">Next</button>
+     
+      <button id="show-all-questions-btn">Show All Questions</button>
+    </div>
+  </div>
+  <div id="question-list-container" style="display: none;"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
